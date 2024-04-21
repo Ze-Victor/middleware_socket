@@ -22,8 +22,8 @@ public class NamingService {
 
     public static void main(String[] args) {
         NamingService namingService = new NamingService();
-        try (ServerSocket serverSocket = new ServerSocket(8080)) {
-            System.out.println("Serviço de Nomes iniciado na porta 8080...");
+        try (ServerSocket serverSocket = new ServerSocket(8085)) {
+            System.out.println("Serviço de Nomes iniciado na porta 8085...");
             while (true) {
                 Socket clientSocket = serverSocket.accept();
                 new Thread(() -> handleClient(clientSocket, namingService)).start();
