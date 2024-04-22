@@ -1,9 +1,23 @@
 package client;
 
+import java.io.IOException;
+import java.net.UnknownHostException;
+
+import middleware.application.Middleware;
+
 public class Cliente {
+	
     public static void main(String[] args) {
-        ClienteStub stub = new ClienteStub("calculadora", "localhost", 5000);
-        double resultado = stub.calcular(10, 5, '+');
-        System.out.println("Resultado: " + resultado);
+    	Middleware stub = new Middleware();
+    	
+    	try {
+			System.out.println(stub.conectar("Teste", "teste"));
+			
+			
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
     }
 }

@@ -7,10 +7,10 @@ import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import naming.ServicoAplicacaoInfo;
-import naming.ServicoNomes;
+
 
 public class Servidor {
+	/*
     public static void main(String[] args) {
 
         ServerSocket serverSocket = null;
@@ -93,4 +93,5 @@ class ServidorHandler implements Runnable {
                 return Double.NaN;
         }
     }
+    */
 }
