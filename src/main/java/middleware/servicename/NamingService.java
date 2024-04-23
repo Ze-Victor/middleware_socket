@@ -11,7 +11,9 @@ import middleware.servicename.model.ServiceInfo;
 import middleware.servicename.dao.ServiceInfoDAO;
 
 public class NamingService {
-	
+	/*
+	 * inicia um servidor que guarda e recuperar os dados de outros servidores
+	 */
     public static void main(String[] args) throws IOException {
     	System.out.println("iniciando...");
     	ServerSocket serve = new ServerSocket(8082);
